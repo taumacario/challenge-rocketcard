@@ -34,6 +34,16 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15rem;
+
+  @media (max-width: 1024px) {
+    padding: 4rem;
+    gap: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
+    flex-direction: column;
+  }
 }
 
 /*=============BACKGROUND==================*/
@@ -42,9 +52,14 @@ body {
   font-size: 2rem;
   line-height: 3rem;
   margin-bottom: 3rem;
+
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
-.background button {
+.bg-btn {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.3rem;
@@ -54,6 +69,7 @@ body {
   background-color: var(--bg);
   color: var(--buttons);
   cursor: pointer;
+  margin-bottom: 5rem;
 }
 
 /*===============================*/
@@ -62,6 +78,11 @@ body {
   border-radius: 50px;
   padding: 2.5rem 1.5rem;
   width: 43.9rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 .card-content {
@@ -102,6 +123,11 @@ body {
 .card-body {
   overflow: hidden;
   padding-bottom: 6rem;
+
+  @media (max-width: 768px) {
+    padding-bottom: 11rem;
+
+  }
 }
 
 .photo-profile {
@@ -112,16 +138,26 @@ body {
   overflow: hidden;
   margin-left: 7rem;
 
+  @media (max-width: 768px) {
+    width: 30rem;
+    height: 30rem;
+    margin-left: 3rem;
+  }
+
   img {
     display: inline-block;
     width: 36rem;
+
+    @media (max-width: 768px) {
+      width: 28rem;
+    }
   }
 }
 
 /*=============INFOS==================*/
 .profile-infos {
   position: absolute;
-  bottom: 7.5rem;
+  bottom: 8.5rem;
 }
 
 .info-list {
@@ -129,6 +165,10 @@ body {
   background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
   padding: 2rem 3rem;
   border-radius: 50px;
+
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+  }
 }
 
 .list-item {
@@ -139,7 +179,12 @@ body {
   justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 }
+
 .list-item:last-child {
   margin-bottom: 0;
 }
